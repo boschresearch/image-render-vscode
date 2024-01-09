@@ -1,2 +1,0 @@
-To package the addon:
-vsce package --baseContentUrl "https://github.boschdevcloud.com/KAJ1RLZ/Catharsys_painkiller/"

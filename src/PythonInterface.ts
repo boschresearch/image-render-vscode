@@ -7,7 +7,7 @@ const { exec } = require("child_process");
 
 // Helper function to produce absolute path to python scripts shipped with this extension in the ressources folder
 export function get_python_script_path(Name: string): string {
-	var extensiondata = vscode.extensions.getExtension('undefined_publisher.CatharsysPainkiller')
+	var extensiondata = vscode.extensions.getExtension('Boschresearch.CatharsysPainkiller')
 	var extensionpath = extensiondata!.extensionPath
 	return path.join(extensionpath, 'resources', Name);
 }

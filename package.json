@@ -2,7 +2,8 @@
   "name": "CatharsysPainkiller",
   "displayName": "Image-Render-Automation Language Support for Vscode",
   "description": "Adds language support for Catharsys and various quality of life improvements for working with Catharsys workspaces",
-  "repository": "https://github.boschdevcloud.com/KAJ1RLZ/Catharsys_painkiller",
+  "repository": "https://github.com/boschresearch/image-render-vscode",
+  "publisher": "Boschresearch",
   "version": "0.0.5",
   "engines": {
     "vscode": "^1.75.0"
