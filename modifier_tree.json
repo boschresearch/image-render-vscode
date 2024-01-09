@@ -1,0 +1,37 @@
+[
+    {
+        "Parent" : "Catharsis",
+        "Children" : [
+            ["modify"],
+            "generate",
+            "load"
+            ]
+    },
+    {
+        "Parent" : "modify",
+        "Children" : [
+            "object",
+            "camera",
+            "anyhuman",
+            "Geblubber"
+            ]
+    },
+    {
+        "Parent" : "modify",
+        "Children" : [
+            "object",
+            "camera",
+            "anyhuman",
+            "Geblubber"
+            ]
+    },
+    {
+        "Parent" : "generate",
+        "Children" : [
+            "object",
+            "camera",
+            "anyhuman",
+            "Ziegenbock"
+            ]
+    },
+]

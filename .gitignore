@@ -1,0 +1,7 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+resources/__pycache__/get_cathy_configs.cpython-310.pyc
+/out_

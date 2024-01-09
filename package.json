@@ -1,0 +1,304 @@
+{
+  "name": "CatharsysPainkiller",
+  "displayName": "Image-Render-Automation Language Support for Vscode",
+  "description": "Adds language support for Catharsys and various quality of life improvements for working with Catharsys workspaces",
+  "repository": "https://github.boschdevcloud.com/KAJ1RLZ/Catharsys_painkiller",
+  "version": "0.0.5",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json5",
+    "onLanguage:ison"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "colors": [
+      {
+        "id": "Modulestatus.devel_uptodate",
+        "description": "Color for error message in the status bar.",
+        "defaults": {
+          "dark": "#0f0",
+          "light": "0f0",
+          "highContrast": "0f0",
+          "highContrastLight": "0f0"
+        }
+      },
+      {
+        "id": "Modulestatus.devel_outdated",
+        "description": "Color for error message in the status bar.",
+        "defaults": {
+          "dark": "#0f06",
+          "light": "0f06",
+          "highContrast": "0f06",
+          "highContrastLight": "0f06"
+        }
+      },
+      {
+        "id": "Modulestatus.nondevel_uptodate",
+        "description": "Color for error message in the status bar.",
+        "defaults": {
+          "dark": "#f00",
+          "light": "f00",
+          "highContrast": "f00",
+          "highContrastLight": "f00"
+        }
+      },
+      {
+        "id": "Modulestatus.nondevel_outdated",
+        "description": "Color for error message in the status bar.",
+        "defaults": {
+          "dark": "#f006",
+          "light": "f006",
+          "highContrast": "f006",
+          "highContrastLight": "f006"
+        }
+      }
+    ],
+    "commands": [
+      {
+        "command": "Cathystuff.run_stashed_command",
+        "title": "RUN (cathy command)",
+        "icon": {
+          "light": "resources/Bananas.svg",
+          "dark": "resources/Bananas.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.refresh_sidepanel",
+        "title": "Refresh Catharsys sidepanel",
+        "icon": {
+          "light": "resources/refresh_light.svg",
+          "dark": "resources/refresh_dark.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.run_action",
+        "title": "RUN action (cathy command)",
+        "icon": {
+          "light": "resources/Rocket.svg",
+          "dark": "resources/Rocket.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.run_action_debug",
+        "title": "RUN action [+ --debug]",
+        "category" : "Cathystuff", 
+        "icon": {
+          "light": "resources/Sun.svg",
+          "dark": "resources/Sun.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.run_action_debug_config_only",
+        "title": "RUN action [+ --config-only --config-vars]",
+        "category" : "Cathystuff", 
+        "icon": {
+          "light": "resources/Sun.svg",
+          "dark": "resources/Sun.svg"
+        }
+      }, 
+
+      {
+        "command": "Cathystuff.cathy_blender_init",
+        "title": "Initialize Blender for config",
+        "icon": {
+          "light": "resources/Sun.svg",
+          "dark": "resources/Sun.svg"
+        }
+      },
+
+      {
+        "command": "Cathystuff.navigate_to_config",
+        "title": "Navigate to the config folder",
+        "icon": {
+          "light": "resources/folder.svg",
+          "dark": "resources/folder.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.cathy_blender_show",
+        "title": "cathy blender show",
+        "icon": {
+          "light": "resources/OpenEye_icon.svg",
+          "dark": "resources/OpenEye_icon.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.cathy_blender_show_file",
+        "title": "Open with Cathy blender show",
+        "icon": {
+          "light": "resources/OpenEye_icon.svg",
+          "dark": "resources/OpenEye_icon.svg"
+        }
+      },
+      {
+        "command": "Cathystuff.paste_config",
+        "title": "Paste as catharsys config"
+      },
+      {
+        "command": "Cathystuff.copy_config",
+        "title": "Copy as catharsys config"
+      },
+      {
+        "command": "Cathystuff.cathy_repos_update",
+        "title": "Update Installation"
+      },
+      {
+        "command": "Cathystuff.cathy_delete_lsf_group",
+        "title": "Purge lsf log"
+      },
+      {
+        "command": "Cathystuff.open_in_terminal",
+        "title": "Open installation folder in terminal"
+      },
+      {
+        "command": "Cathystuff.switch_module_branch",
+        "title": "Switch to branch"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "Cathystuff",
+          "name": "Image-Render-Automation Workspace"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "Cathystuff.refresh_sidepanel",
+          "when": "view == Cathystuff",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "Cathystuff.run_stashed_command",
+          "when": "view == Cathystuff && viewItem == command",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.run_action",
+          "when": "view == Cathystuff && viewItem == Catharsys_Action",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.run_action_debug",
+          "when": "view == Cathystuff && viewItem == Catharsys_Action",
+          "group": "Cathystuff@0"
+        },
+        {
+          "command": "Cathystuff.run_action_debug_config_only",
+          "when": "view == Cathystuff && viewItem == Catharsys_Action",
+          "group": "Cathystuff@1"
+        },
+        {
+          "command": "Cathystuff.cathy_blender_show",
+          "when": "view == Cathystuff && viewItem == Catharsys_Action",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.cathy_blender_init",
+          "when": "view == Cathystuff && viewItem == catharsysconfig",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.navigate_to_config",
+          "when": "view == Cathystuff && viewItem == catharsysconfig",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.cathy_repos_update",
+          "when": "view == Cathystuff && viewItem == Catharsys_Installation_Status",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.cathy_delete_lsf_group",
+          "when": "view == Cathystuff && viewItem == lsf_group",
+          "group": "inline"
+        },
+        {
+          "command": "Cathystuff.open_in_terminal",
+          "when": "view == Cathystuff && viewItem == CatharsysCore",
+          "group": "Cathystuff@0"
+        },
+        {
+          "command": "Cathystuff.open_in_terminal",
+          "when": "view == Cathystuff && viewItem == CatharsysModule",
+          "group": "Cathystuff@0"
+        },
+        {
+          "command": "Cathystuff.switch_module_branch",
+          "when": "view == Cathystuff && viewItem == CatharsysCore",
+          "group": "Cathystuff@1"
+        },
+        {
+          "command": "Cathystuff.switch_module_branch",
+          "when": "view == Cathystuff && viewItem == CatharsysModule",
+          "group": "Cathystuff@1"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "Cathystuff.paste_config",
+          "group": "5_cutcopypaste@2",
+          "when": "Cathystuff.catharsys_config_copied && ((explorerResourceIsFolder && resourceDirname =~ /config.*/) || (resourceFilename =~ /config/))"
+        },
+        {
+          "command": "Cathystuff.copy_config",
+          "group": "5_cutcopypaste@1",
+          "when": "explorerResourceIsFolder && (resourceDirname =~ /\\\\config(\\\\.*|)/  || resourceDirname =~ /\\/config(\\/.*|)/g )"
+        },
+        {
+          "command": "Cathystuff.cathy_blender_show_file",
+          "group": "navigation@1",
+          "when": "resourceExtname == .blend"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Catharsys Language Support",
+      "properties": {
+        "Image-Render-Automation.condaenv": {
+          "type": "string",
+          "default": "cathy_devel",
+          "description": "Name of the catharsys conda environment"
+        },
+        "Image-Render-Automation.condapath": {
+          "type": "string",
+          "default": "conda",
+          "description": "Path to conda, only relevant when running on Linux"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "python-shell": "^5.0.0"
+  }
+}

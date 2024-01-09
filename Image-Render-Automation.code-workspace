@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off"
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Package Painkiller",
+				"type": "shell",
+				"command": "vsce package",
+				"args": [
+					"--baseContentUrl",
+					"https://github.com/boschresearch/image-render-vscode"
+				],
+				"problemMatcher": []
+			}
+		]
+	}
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 128 128" version="1.0">
+  <g id="layer1" stroke-linejoin="round" stroke="#000" transform="translate(-66.38 -391.32)" fill-rule="evenodd">
+    <path id="path3297" stroke-width="6" fill="#ff0" d="m93.614 471.51l23.286 22.55c29.94-25.09 68.02-46.94 70.1-95.69-48.66 3.65-70.24 41.75-93.386 73.14z"/>
+    <path id="path3301" stroke-width="3.6104" transform="matrix(.59695 .57801 -.57801 .59695 152.08 361.57)" fill="#008080" d="m69.184 36.691a8.5918 8.6913 0 1 1 -17.184 0 8.5918 8.6913 0 1 1 17.184 0z"/>
+    <path id="path3303" stroke-width="3.6104" transform="matrix(.59695 .57801 -.57801 .59695 137.91 376.21)" fill="#008080" d="m69.184 36.691a8.5918 8.6913 0 1 1 -17.184 0 8.5918 8.6913 0 1 1 17.184 0z"/>
+    <path id="path3305" stroke-width="3.6104" transform="matrix(.59695 .57801 -.57801 .59695 123.55 391.04)" fill="#008080" d="m69.184 36.691a8.5918 8.6913 0 1 1 -17.184 0 8.5918 8.6913 0 1 1 17.184 0z"/>
+    <path id="path3307" stroke-width="6" fill="#f00" d="m93.614 471.51l-19.773 6.86c4.276-12.68 11.043-29.07 20.176-34.67 6.003-3.68 20.323-0.94 20.323-0.94l-20.726 28.75z"/>
+    <path id="path3309" stroke-width="6" fill="#f00" d="m117.61 493.33l-6.22 19.98c12.54-4.68 28.7-11.97 34.01-21.28 3.48-6.12 0.28-20.34 0.28-20.34l-28.07 21.64z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Rocket icon</dc:title>
+        <dc:date>2009-03-18T14:12:26</dc:date>
+        <dc:description>clip art, clipart, icon, icon, image, media, png, public domain, remix, rocket, rocket, space, space, svg, toy, toy, transportation, transportation, </dc:description>
+        <dc:source>http://openclipart.org/detail/22539/rocket-icon-by-pitr</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>pitr</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>remix</rdf:li>
+            <rdf:li>rocket</rdf:li>
+            <rdf:li>space</rdf:li>
+            <rdf:li>svg</rdf:li>
+            <rdf:li>toy</rdf:li>
+            <rdf:li>transportation</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
